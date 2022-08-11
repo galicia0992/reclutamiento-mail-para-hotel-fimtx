@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Form</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="cont">
+        <form id="form">
+            <div class="field">
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre">
+            </div>
+            <div class="field">
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad">
+            </div>
+            <div class="field">
+                <label for="domicilio">¿En donde vives?</label>
+                <input type="text" name="domicilio" id="domicilio">
+            </div>
+            <div class="field">
+              <label for="puesto">Puesto</label>
+              <select name="puesto" id="puesto">
+                <option value="camarista">Camarista</option>
+                <option value="areas publicas">Areas publicas</option>
+                <option value="cocinero">Cocinera/0</option>
+                <option value="parrillero">Parrillera/o</option>
+                <option value="steward">Steward</option>
+                <option value="cajero">Cajera/o</option>
+                <option value="operador de mantenimiento">Operador de mantenimiento</option>
+                <option value="ejecutivo de ventas" id="vtas">Ejecutivo de Ventas</option>
+                <option value="mesero de banquetes">Mesero de banquetes</option>
+              </select>
+            </div>
+            <div class="field d-none" id="campoVehiculo">
+                <label for="vehiculo">¿Cuentas con vehiculo?</label>
+                <select name="vehiculo" id="vehiculo">
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="estudios">Nivel de estudios</label>
+                <select name="estudios" id="estudios">
+                    <option value="sin estudios">Sin estudios</option>
+                    <option value="primaria">Primaria</option>
+                    <option value="primaria trunca">Primaria trunca</option>
+                    <option value="secundaria">Secundaria</option>
+                    <option value="secundaria trunca">Secundaria trunca</option>
+                    <option value="preparatoria">Preparatoria</option>
+                    <option value="preparatoria trunca">Preparatoria trunca</option>
+                    <option value="carrera tecnica">Carrera tecnica</option>
+                    <option value="licenciatura trunca">Licenciatura trunca</option>
+                    <option value="licenciatura">Licenciatura</option>
+                </select>
+                <div class="d-none" id="campoCarr">
+                <label for="ct">Nombre de la carrera</label>
+                <input type="text" name="ct" id="ct">
+                </div>
+            </div>
+            <div class="field">
+                <label for="discapacidad">¿Cuentas con alguna discapacidad?<br>(esto no es excluyente)</label>
+                <select name="discapacidad" id="discapacidad">
+                    <option value="no">No</option>
+                    <option value="si">Si</option>
+                </select>
+            </div>
+            <div class="field d-none" id="campoDis">
+                <label for="discCon">¿Con que discapacidad cuentas?</label>
+                <input type="text" name="discCon" id="discCon">
+            </div>
+            <div class="field">
+                <label for="experiencia">¿Cuentas con experiencia laboral previa sobre el puesto que solicitas?</label>
+                <select name="experiencia" id="experiencia">
+                    <option value="no">No</option>
+                    <option value="si">Si</option>
+                </select>
+            </div>
+            <div class="field d-none" id="empresa">
+                <label for="nombrEmpresa">Nombre del ultimo lugar donde laboraste referente al puesto solicitado</label>
+                <input type="text" name="nombreEmpresa" id="nombreEmpresa">
+                <label for="puestoSolicitado">Nombre del Puesto</label>
+                <input type="text" name="puestoSolicitado" id="puestoSolicitado">
+                <label for="funciones">Funciones del puesto</label>
+                <input type="text" name="funciones" id="funciones">
+                <label for="fechaInicio">Fecha de inicio</label>
+                <input type="date" name="fechaInicio" id="fechaInicio">
+                <label for="fechaFinal">Facha de terminacion laboral</label>
+                <input type="date" name="fechaFinal" id="fechaFinal">
+            </div>
+            <div class="field">
+                <label for="telefono">Telefono</label>
+                <input type="number" name="telefono" id="telefono">
+              </div>
+            <div class="field">
+                <label for="correo">Correo electronico (en caso de contar con uno)</label>
+                <input type="email" name="correo" id="correo">
+              </div>
+            <input type="submit" id="button" value="Postulate">
+        </form>
+    </div>
+      
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      
+      <script type="text/javascript">
+        emailjs.init('lyrv4bzWEm2GU_hI1')
+      </script>
+      <script src="/js/main.js"></script>
+      <!--
+        Yair Galicia 
+        github: https://github.com/galicia0992
+        linkedin: https://www.linkedin.com/in/yair-galicia-7958a91b5/
+      -->
+</body>
+</html>

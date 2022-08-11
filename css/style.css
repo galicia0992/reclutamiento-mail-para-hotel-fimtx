@@ -1,0 +1,77 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  padding: 40px;
+}
+
+.field {
+  margin-bottom: 18px;
+}
+
+.field label {
+  font-size: 20px;
+  color: #777;
+}
+
+.field, input, select {
+  width: 100%;
+  line-height: 2;
+  font-size: 20px;
+}
+
+input, select {
+  border-style: inset;
+}
+
+input[type="submit"] {
+  padding: 6px 30px;
+  font-size: 20px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none;
+}
+
+input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+}
+
+option {
+  font-size: 20px;
+}
+
+select {
+  border-radius: 10px;
+  border-style: outset;
+  border-width: 2px;
+  border-color: #ebdede;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cont {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5%;
+  border-style: outset;
+  border-radius: 12px;
+  background-color: rgba(238, 233, 233, 0.352);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/*# sourceMappingURL=style.css.map */
